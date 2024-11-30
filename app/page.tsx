@@ -11,7 +11,7 @@ export default function Home() {
         width={400}
         height={300}
         />
-      <div className="w-full">
+      <div className="w-full px-64">
       <Search />
       </div>
     </div>
