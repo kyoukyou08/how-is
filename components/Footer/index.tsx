@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer(){
     return(
-        <div className="w-full px-64 py-10 grid grid-cols-2 grid-rows-2 bg-gray-800 gap-8">
-            <div className="row-span-2 span ">
+        <div className="w-full px-64 py-10 flex flex-col flex-wrap bg-gray-800 gap-8">
+            <div className="w-1/2">
             <Image
             alt=""
             src="/logo-footer.svg"
@@ -13,7 +13,7 @@ export default function Footer(){
             height={30}
             className="py-2"
             />
-            <div className="">
+            <div className="w-1/2">
                 <Search />
             </div>
             <ul className="flex flex-row flex-wrap my-5 gap-2">
@@ -41,7 +41,7 @@ export default function Footer(){
                 />
             </div>
 
-            <div className="row-span-1 flex flex-col">
+            <div className="">
                 <Image
                 alt=""
                 src="/logo-sns.svg"

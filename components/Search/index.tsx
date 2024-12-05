@@ -6,7 +6,7 @@ export default function Search (){
             <form action='' className='flex justify-center rounded-full'>
                 <input
                 type='text'
-                className='w-full rounded-full p-2'
+                className='w-4/5 rounded-full p-2'
                 placeholder='search'
                 />
             </form>
