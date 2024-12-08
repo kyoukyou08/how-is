@@ -1,18 +1,25 @@
+import Link from "next/link";
 import Image from "next/image";
-import Search from "@/components/Search";
+import accessToken from "@/app/Recommend/api/spotify_auth"
 
 export default function Home() {
+  console.log(accessToken)
+  console.log()
   return (
-    <div className="bg-orange-500 w-max-w-2xl py-36 flex flex-col items-center" >
+    <div>
+      <div className="flex flex-col justify-center items-center my-28">
         <Image
-        className=""
+        alt=""
         src="/main-title.svg"
-        alt="title"
-        width={400}
-        height={300}
+        width={300}
+        height={50}
+        className="p-auto "
         />
-      <div className="w-full max-w-2xl">
-      <Search />
+        <div className="p-auto m-4 bg-zinc-900 w-fit px-8 py-4 rounded-xl text-slate-100 hover:scale-105 duration-500 ">
+          <Link href="/Recommend">
+          Let's find favorite songs!　＞
+          </Link>
+        </div>
       </div>
     </div>
   );
